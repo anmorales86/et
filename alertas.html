@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="sidemenu">
+		<ul>
+			<li class="hamburger"><img src="images/hamburger.png" /><label>Menu</label></li>
+			<li><a href="analyst.html"><span>Listas</span><img src="images/menu_pipeline.png" /></a></li>
+			<li class="selected"><a href="reclamo.html"><span>Reclamos</span><img src="images/menu_dispute_sl.png" /></a></li>
+			<li><a href="formulario.html"><span>Modificaciones</span><img src="images/menu_modify.png" /></a></li>
+			<li><span>Auditoria</span><img src="images/menu_audit.png" /></li>
+			<li><a href="reportes.html"><span>Reportes</span><img src="images/menu_report.png" /></a></li>
+			<li><span>Administracion</span><img src="images/menu_admin.png"></li>
+			
+		</ul>
+	</div>
+	<article class="main-content">
+	<header>
+		<div class="row">
+		<div class="col-sm-5">
+			<img class="logo" src="images/logo.png" />
+		</div>
+		<div class="col-sm-7">
+			<ul>
+				<li><img src="images/search.png" /></li>
+				<li><img src="images/notification.png"><span class="notification">61</span></li>
+				<li class="user-profile">
+					<div class="user-info"><img src="images/userprofile.png" /><h3>Juliana Perez <span class="font-400">(Analista)</span> <br /><span>Citi Colombia</span></h3><img src="images/user-dropdown.png" class="user-option"></div>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</header>
+	<section class="breadcrumb-container">
+		<div class="row align-items-start">
+		<div class="col-sm-6">
+			<h2>Alertas</h2>
+			<h4>Inicio > Otras Novedades > Gestion de Alertas</h4>
+		</div>
+		</div>
+	</section>
+	<section class="tab-container">
+		<ul>
+			<li class="lista-comun active">Alertas Indivuduales</li>
+			<li class="mi-lista">Alertas Masivas</li>
+			<li class="mi-lista">Cierre Alertas Masivas</li>
+		</ul>
+	</section>
+	<section class="obligacion-info acc-info">
+		<div class="page-card">
+			<h3 class="heading">Formulario de consulta por titular <span>(Los campos marcados con "<i>*</i>" son obligatorios)</span></h3>
+			<div class="formulario-field-small form-element">
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-12">
+					<h5>Tipo Identificación<span>*</span></h5>
+					<select class="form-control">
+						<option>Seleccionar</option>
+						
+					<option>Otro</option><option>
+Cedula de ciudadania</option>
+						<option>
+NIT jurídicos</option>
+						<option>
+NIT extranjería</option>
+						<option>
+Cedula extranjería</option>
+						<option>
+Pasaporte</option>
+						<option>
+Seguro social extranjero</option>
+						<option>
+Carné diplomático</option>
+						<option>
+Fideicomiso</option>
+						<option>
+Permiso especial de permanencia (PEP)</option>
+						<option>
+Sociedad extranjera sin NIT en colombia</option>
+						<option>
+Tarjeta de identidad</option>
+						<option>
+Documento nacional de identidad (DNI)</option>
+						<option>
+Registro civil</option>
+						
+
+						
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+					<h5>Numero de Identificacion <span>*</span></h5>
+					<input type="text" class="form-control" value="" />
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+					<h5>Apellido / Razón Social</h5>
+					<input type="text" class="form-control" value="" />
+				</div>
+				
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="btn-container">
+		<a href="alertas-resultados.html" class="btn btn-primary pull-right">Consultar</a>
+	</div>
+	</article>
+	<footer>
+		<p>&copy; 2018 Experian Information Solutions, Inc. Experian Marketing Services All rights reserve</p>
+	</footer>
+	<div class="overlay"></div>
+	<script type="text/javascript">
+		$('.show-info').click(function(){
+			$('.show-obligacion').slideToggle();
+			$(this).html($(this).html() == 'Colapso <i class="fa fa-angle-up"></i>' ? 'Expandir <i class="fa fa-angle-down"></i>' : 'Colapso <i class="fa fa-angle-up"></i>');
+		});
+		$('.hamburger').click(function(){
+			$(".sidemenu").toggleClass('active','');
+			$(".overlay").toggle();
+		});
+		$(".overlay").click(function(){
+			$(".sidemenu").removeClass('active');
+			$(this).hide();
+		});
+		$('.todas input[type=button]').click(function(){
+			$('.todas ul').toggle();
+		});
+		$('.todas li').click(function(){
+			$('.todas ul').hide();
+		});
+		$(".tab-container li").click(function(){
+			$(".tab-container li").removeClass('active');
+			$(this).addClass('active');
+			$('.action').hide();
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="sidemenu">
+		<ul>
+			<li class="hamburger"><img src="images/hamburger.png" /><label>Menu</label></li>
+			<li class="selected"><a href="analyst.html"><span>Listas</span><img src="images/menu_pipeline_sl.png" /></a></li>
+			<li><a href="reclamo.html"><span>Reclamos</span><img src="images/menu_dispute.png" /></a></li>
+			<li><a href="formulario.html"><span>Modificaciones</span><img src="images/menu_modify.png" /></a></li>
+			<li><span>Auditoria</span><img src="images/menu_audit.png" /></li>
+			<li><a href="reportes.html"><span>Reportes</span><img src="images/menu_report.png" /></a></li>
+			<li><span>Administracion</span><img src="images/menu_admin.png"></li>
+			
+		</ul>
+	</div>
+	<article class="main-content">
+	<header>
+		<div class="row">
+		<div class="col-sm-5">
+			<img class="logo" src="images/logo.png" />
+		</div>
+		<div class="col-sm-7">
+			<ul>
+				<li><img src="images/search.png" /></li>
+				<li><img src="images/notification.png"><span class="notification">6</span></li>
+				<li class="user-profile">
+					<div class="user-info"><img src="images/userprofile.png" /><h3>Juliana Perez <span class="font-400">(Analista)</span> <br /><span>Citi Colombia</span></h3><img src="images/user-dropdown.png" class="user-option"></div>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</header>
+	<section class="breadcrumb-container">
+		<div class="row align-items-start">
+		<div class="col-sm-6">
+			<h2>Lista Comun <span><a href="#"><img src="images/refresh.png" />Refrescar Pagina</a></span></h2>
+			<h4>Inicio > Bandera de entrada</h4>
+		</div>
+		</div>
+	</section>
+	<section class="tab-container">
+		<ul>
+			<li class="lista-comun active">Lista Comun</li>
+			<li class="mi-lista">Mi Lista</li>
+		</ul>
+	</section>
+	<section class="tile-container" id="part1">
+	<div class="row">
+		<div class="col-sm-6 col-xs-12 tile-comun tile-part">
+			
+			<div class="tile">
+			<div class="row">
+				<div class="col-4">
+					<div class="reclamo-tile">
+						<div class="tile-category">
+							<h3>Reclamo</h3>
+							<img src="images/reclamo-tile.png">
+							<h6>180</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<h5 class="pink-clr">Sin Asignar</h5>
+					<h2>100</h2>
+				</div>
+				<div class="col-4">
+					<h5 class="lt-blue-clr">Asignados</h5>
+					<h2>100</h2>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-xs-12 tile-comun tile-part">
+			
+			<div class="tile">
+			<div class="row">
+				<div class="col-4">
+					<div class="modificacion-tile">
+						<div class="tile-category">
+							<h3>Modificacion</h3>
+							<img src="images/modificacion.png">
+							<h6>180</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<h5 class="pink-clr">Sin Asignar</h5>
+					<h2>100</h2>
+				</div>
+				<div class="col-4">
+					<h5 class="lt-blue-clr">Asignados</h5>
+					<h2>80</h2>
+				</div>
+			</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<section class="tile-container" id="part2" style="display:none">
+	<div class="row">
+		<div class="col-sm-6 col-xs-12 tile-comun tile-part">
+			
+			<div class="tile">
+			<div class="row">
+				<div class="col-4">
+					<div class="reclamo-tile">
+						<div class="tile-category">
+							<h3>Reclamo</h3>
+							<img src="images/reclamo-tile.png">
+							<h6>180</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<h5 class="pink-clr">Trámite Inicial</h5>
+					<h2>100</h2>
+				</div>
+				<div class="col-4">
+					<h5 class="lt-blue-clr">Devoluciones</h5>
+					<h2>100</h2>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-xs-12 tile-comun tile-part">
+			
+			<div class="tile">
+			<div class="row">
+				<div class="col-4">
+					<div class="modificacion-tile">
+						<div class="tile-category">
+							<h3>Modificacion</h3>
+							<img src="images/modificacion.png">
+							<h6>180</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<h5 class="pink-clr">Trámite Inicial</h5>
+					<h2>100</h2>
+				</div>
+				<div class="col-4">
+					<h5 class="lt-blue-clr">Devoluciones</h5>
+					<h2>80</h2>
+				</div>
+			</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<section class="filter-container">
+		<div class="filter-section">
+			<div class="filter-txt">
+				<h3 class="heading">Consultar Por</h3>
+			</div>
+			<div class="filter-input">
+				<select class="form-control">
+					<option>Modificacion</option>
+					<option>Reclamo</option>
+				</select>
+			</div>
+			<div class="filter-input">
+				<select class="form-control">
+					<option>Tipo de documento</option>
+					<option>BanColombia</option>
+				</select>
+			</div>
+			<div class="filter-input">
+				<input type="text" class="form-control" placeholder="Ingrese el numero de documento" />
+			</div>
+			<div class="filter-btn">
+				<input type="button" value="Consultar" class="btn btn-primary" />
+			</div>
+		</div>
+	</section>
+	<section class="tbl-container">
+		<div class="tbl-info">
+			<div class="table-filter">
+				<div class="row">
+				<div class="col-md-4">
+					<ul>
+						<li><h4 class="heading">Tramites Pendientes</h4></li>
+						<li>
+							<label>Mostrando</label>
+							<select>
+								<option>50</option>
+								<option>100</option>
+								<option>150</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-8">
+					<ul class="right-section">
+						<li>
+							<label>Exportar</label>
+							<input type="button" class="pdf-btn" value="PDF">
+							<input type="button" class="xls-btn" value="XLS">
+						</li>
+						<li class="action" style="display:none;">
+							<select>
+								<option selected disabled>Accion</option>
+								<option>Ratificar</option>
+								<option>Tramitar sin Cambios</option>
+							</select>
+						</li>
+						<li>
+							<label>Ir a la pagina</label>
+							<select>
+								<option>50</option>
+								<option>100</option>
+								<option>150</option>
+							</select>
+						</li>
+						<li class="pagination">
+							<label>Pagina</label>
+							<ul>
+								<li><img src="images/left-arrow.png"></li>
+								<li class="active">1</li>
+								<li>2</li>
+								<li>3</li>
+								<li>...</li>
+								<li>50</li>
+								<li><img src="images/right-arrow.png"></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+			<div class="tbl-structure">
+			<table class="table">
+			<thead>
+				<tr>
+					<th>
+						<div class="checkbox">
+							<input id="checkbox1" type="checkbox">
+							<label for="checkbox1"></label>
+						</div>
+					</th>
+					<th><label>ID</label></th>
+					<th><label>Tipo ID</label></th>
+					<th><label>Nombers y Apellidos</label></th>
+					<th><label>#Caso</label></th>
+					<th><label>NIT</label></th>
+					<th><label>Suscriptor</label></th>
+					<th><label>#Obligacion</label></th>
+					<th><label>Fecha Inicio</label></th>
+					<th><label>Tipo Leyenda</label></th>
+					<th><label>Canal</label></th>
+					<th><label>Solucion</label></th>
+					<th></th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>
+						<div class="checkbox">
+							<input id="checkbox2" type="checkbox">
+							<label for="checkbox2"></label>
+						</div>
+					</td>
+					<td><a href="modificacion.html">80168185</a></td>
+					<td>CC</td>
+					<td>Rodriguez</td>
+					<td><div class="process-status"><img src="images/grid_dispute_icon.png">2345189</div></td>
+					<td>84325469281</td>
+					<td>Bancolombia</td>
+					<td>72851655745</td>
+					<td><div class="date-time"><img src="images/grid_status1.png" />01/08/2018</div></td>
+					<td><a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><span class="tipo-leyenda">RT</span></a></td>
+					<td>Midatacredito</td>
+					<td>Modificacion</td>
+					<td><img src="images/grid_expasnd.png" class="grid-toggle" /></td>
+				</tr>
+				<tr class="inner-tbl">
+					<td>
+					</td>
+					<td colspan="12">
+						<table class="table">
+							<tr>
+								<td>
+									<h5>Tipo Cartera</h5>
+									<p>TDC</p>
+								</td>
+								<td>
+									<h5>Comentario Formulacion</h5>
+									<a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><img src="images/comment_info_icon.png" /></a>
+								</td>
+								<td>
+									<h5>Comentario para el Ciudadano</h5>
+									<a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><img src="images/comment_info_icon.png" /></a>
+								</td>
+								<td>
+									<h5>Fetcha Modificacion</h5>
+									<p>02/22/2018</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h5>Fecha Devolucuion</h5>
+									<p>02/22/2018</p>
+								</td>
+								<td>
+									<h5>Motivo Devolucion</h5>
+									<p>Errores del sistema</p>
+								</td>
+								<td>
+									<h5>Nombers Revisor</h5>
+									<p>John Smith</p>
+								</td>
+								<td>
+									<h5>Usuario Analista</h5>
+									<p>Natalia Gomez</p>
+								</td>
+								
+							</tr>
+							<tr>
+								<td>
+									<h5>Estado Proceso</h5>
+									<p>Natalia Gomez</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="checkbox">
+							<input id="checkbox2" type="checkbox">
+							<label for="checkbox2"></label>
+						</div>
+					</td>
+					<td><a href="credit-modificacion.html">80148281</a></td>
+					<td>CC</td>
+					<td>Antonio Banderas</td>
+					<td><div class="process-status"><img src="images/grid_modify_icon.png">AL9741136</div></td>
+					<td>7396765319</td>
+					<td>BanColombia</td>
+					<td>85719327625</td>
+					<td><div class="date-time"><img src="images/grid_status2.png" />08/18/2018</div></td>
+					<td><a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><span class="tipo-leyenda">DJ</span></a></td>
+					<td>Midatacredito</td>
+					<td>TSC</td>
+					<td><img src="images/grid_expasnd.png" class="grid-toggle" /></td>
+				</tr>
+				<tr class="inner-tbl">
+					<td>
+					</td>
+					<td colspan="12">
+						<table class="table">
+							<tr>
+								<td>
+									<h5>Tipo Cartera</h5>
+									<p>TDC</p>
+								</td>
+								<td>
+									<h5>Comentario Formulacion</h5>
+									<a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><img src="images/comment_info_icon.png" /></a>
+								</td>
+								<td>
+									<h5>Comentario para el Ciudadano</h5>
+									<a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><img src="images/comment_info_icon.png" /></a>
+								</td>
+								<td>
+									<h5>Fetcha Modificacion</h5>
+									<p>02/22/2018</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h5>Fecha Devolucuion</h5>
+									<p>02/22/2018</p>
+								</td>
+								<td>
+									<h5>Motivo Devolucion</h5>
+									<p>Errores del sistema</p>
+								</td>
+								<td>
+									<h5>Nombers Revisor</h5>
+									<p>John Smith</p>
+								</td>
+								<td>
+									<h5>Usuario Analista</h5>
+									<p>Natalia Gomez</p>
+								</td>
+								
+							</tr>
+							<tr>
+								<td>
+									<h5>Estado Proceso</h5>
+									<p>Natalia Gomez</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="checkbox">
+							<input id="checkbox2" type="checkbox">
+							<label for="checkbox2"></label>
+						</div>
+					</td>
+					<td><a href="mi-lista-modificacion.html">80148281</a></td>
+					<td>CC</td>
+					<td>Zulma Atehortua</td>
+					<td><div class="process-status"><img src="images/grid_modify_icon.png">AL2345189</div></td>
+					<td>9456897546</td>
+					<td>Banco de Bogota</td>
+					<td>84868416516</td>
+					<td><div class="date-time"><img src="images/grid_status2.png" />05/04/2018</div></td>
+					<td><a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><span class="tipo-leyenda">DJ</span></a></td>
+					<td>Midatacredito</td>
+					<td>Ratificar</td>
+					<td><img src="images/grid_expasnd.png" class="grid-toggle" /></td>
+				</tr>
+				<tr class="inner-tbl">
+					<td>
+					</td>
+					<td colspan="12">
+						<table class="table">
+							<tr>
+								<td>
+									<h5>Tipo Cartera</h5>
+									<p>TDC</p>
+								</td>
+								<td>
+									<h5>Comentario Formulacion</h5>
+									<a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><img src="images/comment_info_icon.png" /></a>
+								</td>
+								<td>
+									<h5>Comentario para el Ciudadano</h5>
+									<a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><img src="images/comment_info_icon.png" /></a>
+								</td>
+								<td>
+									<h5>Fetcha Modificacion</h5>
+									<p>02/22/2018</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h5>Fecha Devolucuion</h5>
+									<p>02/22/2018</p>
+								</td>
+								<td>
+									<h5>Motivo Devolucion</h5>
+									<p>Errores del sistema</p>
+								</td>
+								<td>
+									<h5>Nombers Revisor</h5>
+									<p>John Smith</p>
+								</td>
+								<td>
+									<h5>Usuario Analista</h5>
+									<p>Natalia Gomez</p>
+								</td>
+								
+							</tr>
+							<tr>
+								<td>
+									<h5>Estado Proceso</h5>
+									<p>Natalia Gomez</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				</tr>
+								<tr>
+					<td>
+						<div class="checkbox">
+							<input id="checkbox2" type="checkbox">
+							<label for="checkbox2"></label>
+						</div>
+					</td>
+					<td><a href="modificacion.html">80971183</a></td>
+					<td>CC</td>
+					<td>Cesar Ariza</td>
+					<td><div class="process-status"><img src="images/grid_dispute_icon.png">2345189</div></td>
+					<td>14242462282</td>
+					<td>Banco de Bogota</td>
+					<td>72851655745</td>
+					<td><div class="date-time"><img src="images/grid_status3.png" />08/01/2018</div></td>
+					<td><a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><span class="tipo-leyenda">RT</span></a></td>
+					<td>CAS</td>
+					<td>Eliminar</td>
+					<td><img src="images/grid_expasnd.png" class="grid-toggle" /></td>
+				</tr>
+				<tr class="inner-tbl">
+					<td>
+					</td>
+					<td colspan="12">
+						<table class="table">
+							<tr>
+								<td>
+									<h5>Tipo Cartera</h5>
+									<p>TDC</p>
+								</td>
+								<td>
+									<h5>Comentario Formulacion</h5>
+									<a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><img src="images/comment_info_icon.png" /></a>
+								</td>
+								<td>
+									<h5>Comentario para el Ciudadano</h5>
+									<a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><img src="images/comment_info_icon.png" /></a>
+								</td>
+								<td>
+									<h5>Fetcha Modificacion</h5>
+									<p>02/22/2018</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h5>Fecha Devolucuion</h5>
+									<p>02/22/2018</p>
+								</td>
+								<td>
+									<h5>Motivo Devolucion</h5>
+									<p>Errores del sistema</p>
+								</td>
+								<td>
+									<h5>Nombers Revisor</h5>
+									<p>John Smith</p>
+								</td>
+								<td>
+									<h5>Usuario Analista</h5>
+									<p>Natalia Gomez</p>
+								</td>
+								
+							</tr>
+							<tr>
+								<td>
+									<h5>Estado Proceso</h5>
+									<p>Natalia Gomez</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<div class="checkbox">
+							<input id="checkbox2" type="checkbox">
+							<label for="checkbox2"></label>
+						</div>
+					</td>
+					<td><a href="modificacion.html">80378185</a></td>
+					<td>CC</td>
+					<td>Elsa Charry</td>
+					<td><div class="process-status"><img src="images/grid_dispute_icon.png">2345189</div></td>
+					<td>24345464281</td>
+					<td>Bancolombia</td>
+					<td>32851775845</td>
+					<td><div class="date-time"><img src="images/grid_status2.png" />09/01/2018</div></td>
+					<td><a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><span class="tipo-leyenda">RT</span></a></td>
+					<td>CAS</td>
+					<td>Modificacion</td>
+					<td><img src="images/grid_expasnd.png" class="grid-toggle" /></td>
+				</tr>
+				<tr class="inner-tbl">
+					<td>
+					</td>
+					<td colspan="12">
+						<table class="table">
+							<tr>
+								<td>
+									<h5>Tipo Cartera</h5>
+									<p>TDC</p>
+								</td>
+								<td>
+									<h5>Comentario Formulacion</h5>
+									<a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><img src="images/comment_info_icon.png" /></a>
+								</td>
+								<td>
+									<h5>Comentario para el Ciudadano</h5>
+									<a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><img src="images/comment_info_icon.png" /></a>
+								</td>
+								<td>
+									<h5>Fetcha Modificacion</h5>
+									<p>02/22/2018</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h5>Fecha Devolucuion</h5>
+									<p>02/22/2018</p>
+								</td>
+								<td>
+									<h5>Motivo Devolucion</h5>
+									<p>Errores del sistema</p>
+								</td>
+								<td>
+									<h5>Nombers Revisor</h5>
+									<p>John Smith</p>
+								</td>
+								<td>
+									<h5>Usuario Analista</h5>
+									<p>Natalia Gomez</p>
+								</td>
+								
+							</tr>
+							<tr>
+								<td>
+									<h5>Estado Proceso</h5>
+									<p>Natalia Gomez</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="checkbox">
+							<input id="checkbox2" type="checkbox">
+							<label for="checkbox2"></label>
+						</div>
+					</td>
+					<td><a href="modificacion.html">80178385</a></td>
+					<td>CC</td>
+					<td>Ali egel</td>
+					<td><div class="process-status"><img src="images/grid_modify_icon.png">AL4525189</div></td>
+					<td>0456897546</td>
+					<td>Banco de Bogota</td>
+					<td>84869417516</td>
+					<td><div class="date-time"><img src="images/grid_status3.png" />07/15/2018</div></td>
+					<td><a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><span class="tipo-leyenda">DJ</span></a></td>
+					<td>Midatacredito</td>
+					<td>TSC</td>
+					<td><img src="images/grid_expasnd.png" class="grid-toggle" /></td>
+				</tr>
+				<tr class="inner-tbl">
+					<td>
+					</td>
+					<td colspan="12">
+						<table class="table">
+							<tr>
+								<td>
+									<h5>Tipo Cartera</h5>
+									<p>TDC</p>
+								</td>
+								<td>
+									<h5>Comentario Formulacion</h5>
+									<a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><img src="images/comment_info_icon.png" /></a>
+								</td>
+								<td>
+									<h5>Comentario para el Ciudadano</h5>
+									<a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><img src="images/comment_info_icon.png" /></a>
+								</td>
+								<td>
+									<h5>Fetcha Modificacion</h5>
+									<p>02/22/2018</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h5>Fecha Devolucuion</h5>
+									<p>02/22/2018</p>
+								</td>
+								<td>
+									<h5>Motivo Devolucion</h5>
+									<p>Errores del sistema</p>
+								</td>
+								<td>
+									<h5>Nombers Revisor</h5>
+									<p>John Smith</p>
+								</td>
+								<td>
+									<h5>Usuario Analista</h5>
+									<p>Natalia Gomez</p>
+								</td>
+								
+							</tr>
+							<tr>
+								<td>
+									<h5>Estado Proceso</h5>
+									<p>Natalia Gomez</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="checkbox">
+							<input id="checkbox2" type="checkbox">
+							<label for="checkbox2"></label>
+						</div>
+					</td>
+					<td><a href="modificacion.html">80178485</a></td>
+					<td>CC</td>
+					<td>Jairo Garcia</td>
+					<td><div class="process-status"><img src="images/grid_dispute_icon.png">2345189</div></td>
+					<td>24345464281</td>
+					<td>Bancolombia</td>
+					<td>59854745845</td>
+					<td><div class="date-time"><img src="images/grid_status3.png" />08/01/2018</div></td>
+					<td><a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><span class="tipo-leyenda">SI</span></a></td>
+					<td>Entidad</td>
+					<td>Ratificar</td>
+					<td><img src="images/grid_expasnd.png" class="grid-toggle" /></td>
+				</tr>
+				<tr class="inner-tbl">
+					<td>
+					</td>
+					<td colspan="12">
+						<table class="table">
+							<tr>
+								<td>
+									<h5>Tipo Cartera</h5>
+									<p>TDC</p>
+								</td>
+								<td>
+									<h5>Comentario Formulacion</h5>
+									<a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><img src="images/comment_info_icon.png" /></a>
+								</td>
+								<td>
+									<h5>Comentario para el Ciudadano</h5>
+									<a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><img src="images/comment_info_icon.png" /></a>
+								</td>
+								<td>
+									<h5>Fetcha Modificacion</h5>
+									<p>02/22/2018</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h5>Fecha Devolucuion</h5>
+									<p>02/22/2018</p>
+								</td>
+								<td>
+									<h5>Motivo Devolucion</h5>
+									<p>Errores del sistema</p>
+								</td>
+								<td>
+									<h5>Nombers Revisor</h5>
+									<p>John Smith</p>
+								</td>
+								<td>
+									<h5>Usuario Analista</h5>
+									<p>Natalia Gomez</p>
+								</td>
+								
+							</tr>
+							<tr>
+								<td>
+									<h5>Estado Proceso</h5>
+									<p>Natalia Gomez</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="checkbox">
+							<input id="checkbox2" type="checkbox">
+							<label for="checkbox2"></label>
+						</div>
+					</td>
+					<td><a href="modificacion.html">80168185</a></td>
+					<td>CC</td>
+					<td>Salma Hayek</td>
+					<td><div class="process-status"><img src="images/grid_modify_icon.png">AL2345189</div></td>
+					<td>0456897546</td>
+					<td>Banco de Bogota</td>
+					<td>54868416516</td>
+					<td><div class="date-time"><img src="images/grid_status1.png" />02/18/2018</div></td>
+					<td><a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><span class="tipo-leyenda">DJ</span></a></td>
+					<td>Midatacredito</td>
+					<td>Eliminar</td>
+					<td><img src="images/grid_expasnd.png" class="grid-toggle" /></td>
+				</tr>
+				<tr class="inner-tbl">
+					<td>
+					</td>
+					<td colspan="12">
+						<table class="table">
+							<tr>
+								<td>
+									<h5>Tipo Cartera</h5>
+									<p>TDC</p>
+								</td>
+								<td>
+									<h5>Comentario Formulacion</h5>
+									<a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><img src="images/comment_info_icon.png" /></a>
+								</td>
+								<td>
+									<h5>Comentario para el Ciudadano</h5>
+									<a href="javascript:void(0)" data-toggle="popover" data-content="La obligacion presenta informacion errada"><img src="images/comment_info_icon.png" /></a>
+								</td>
+								<td>
+									<h5>Fetcha Modificacion</h5>
+									<p>02/22/2018</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h5>Fecha Devolucuion</h5>
+									<p>02/22/2018</p>
+								</td>
+								<td>
+									<h5>Motivo Devolucion</h5>
+									<p>Errores del sistema</p>
+								</td>
+								<td>
+									<h5>Nombers Revisor</h5>
+									<p>John Smith</p>
+								</td>
+								<td>
+									<h5>Usuario Analista</h5>
+									<p>Natalia Gomez</p>
+								</td>
+								
+							</tr>
+							<tr>
+								<td>
+									<h5>Estado Proceso</h5>
+									<p>Natalia Gomez</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+			</div>
+			<div class="table-filter bottom-filter">
+				<div class="row justify-content-end">
+				<div class="col-md-8">
+					<ul class="right-section">
+						<li>
+							<label>Ir a la pagina</label>
+							<select>
+								<option>50</option>
+								<option>100</option>
+								<option>150</option>
+							</select>
+						</li>
+						<li class="pagination">
+							<label>Pagina</label>
+							<ul>
+								<li><img src="images/left-arrow.png"></li>
+								<li class="active">1</li>
+								<li>2</li>
+								<li>3</li>
+								<li>...</li>
+								<li>50</li>
+								<li><img src="images/right-arrow.png"></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	</article>
+	<footer>
+		<p>&copy; 2018 Experian Information Solutions, Inc. Experian Marketing Services All rights reserve</p>
+	</footer>
+	<div class="modal fade experian-modal" id="confirm-modificacion">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<div class="modal-body">
+					<h3>Confirmacion de modificacion</h3>
+					<p class="text-center">Por favor, Proporcione una razon</p>
+
+					<h4>Justificacion</h4>
+					<select class="form-control">
+						<option selected disabled>Seleccione Uno</option>
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+					<h4>Commentario</h4>
+					<textarea class="form-control" placeholder="Ingrese en Commentario(optional)"></textarea>
+					<div class="modal-btn">
+						<input type="button" class="btn btn-secondary" value="Cancelar" />
+						<input type="button" class="btn btn-primary" value="Enviar" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="overlay"></div>
+	<script>
+		$(".grid-toggle").click(function() {
+			$(this).toggleClass("rotate","");
+			$(".grid-toggle").not(this).closest('tr').next(".inner-tbl").hide();
+			$(this).closest('tr').next(".inner-tbl").toggle();
+			$(".grid-toggle").not(this).removeClass("rotate");
+		});
+		$('.hamburger').click(function(){
+			$(".sidemenu").toggleClass('active','');
+			$(".overlay").toggle();
+		});
+		$(".overlay").click(function(){
+			$(".sidemenu").removeClass('active');
+			$(this).hide();
+		});
+		$(".tab-container li").click(function(){
+			$(".tab-container li").removeClass('active');
+			$(this).addClass('active');
+			
+		});
+		$('.mi-lista').click(function(){
+			$('.action').show();
+			$('#part1').hide();
+			$('#part2').show();
+		});
+		$('.lista-comun ').click(function(){
+			$('.action').hide();
+			$('#part1').show();
+			$('#part2').hide();
+		});
+		$(document).ready(function(){
+			$('[data-toggle="popover"]').popover(); 
+		});
+		$('body').on('click', function (e) {
+			if ($(e.target).data('toggle') !== 'popover'
+				&& $(e.target).parents('[data-toggle="popover"]').length === 0
+				&& $(e.target).parents('.popover.in').length === 0) { 
+				$('[data-toggle="popover"]').popover('hide');
+			}
+		});
+		$('.action').change(function(){
+			$('#confirm-modificacion').modal('show');
+		})
+	</script>
+</body>
+</html>

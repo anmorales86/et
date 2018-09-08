@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="sidemenu">
+		<ul>
+			<li class="hamburger"><img src="images/hamburger.png" /><label>Menu</label></li>
+			<li><a href="analyst.html"><span>Listas</span><img src="images/menu_pipeline.png" /></a></li>
+			<li><a href="reclamo.html"><span>Reclamos</span><img src="images/menu_dispute.png" /></a></li>
+			<li class="selected"><a href="formulario.html"><span>Modificaciones</span><img src="images/menu_modify_sl.png" /></a></li>
+			<li><span>Auditoria</span><img src="images/menu_audit.png" /></li>
+			<li><a href="reportes.html"><span>Reportes</span><img src="images/menu_report.png" /></a></li>
+			<li><span>Administracion</span><img src="images/menu_admin.png"></li>
+			
+		</ul>
+	</div>
+	<article class="main-content">
+	<header>
+		<div class="row">
+		<div class="col-sm-5">
+			<img class="logo" src="images/logo.png" />
+		</div>
+		<div class="col-sm-7">
+			<ul>
+				<li><img src="images/search.png" /></li>
+				<li><img src="images/notification.png"><span class="notification">6</span></li>
+				<li class="user-profile">
+					<div class="user-info"><img src="images/userprofile.png" /><h3>Juliana Perez <span class="font-400">(Analista)</span> <br /><span>Citi Colombia</span></h3><img src="images/user-dropdown.png" class="user-option"></div>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</header>
+	<section class="breadcrumb-container">
+		<div class="row align-items-start">
+		<div class="col-sm-6">
+			<h2>Modificaciones en linea</h2>
+			<h4>Inicio > Lista Comun > AL1234567</h4>
+		</div>
+		</div>
+	</section>
+	<section class="select-action">
+		<div class="page-card">
+			<div class="selecion-group">
+			<h2>TDS 031366159460000000 BANCOLOMBIA</h2>
+			<!--h2><span class="raclamos-clr">K</span> AHO 031366159460000000 BANCOLOMBIA</h2 -->
+			
+			<div class="radio-container">
+				<p>Seleccione la Accion:</p>
+				<div class="form-check modificar-clr">
+					<label>
+						<input type="radio" id="modificar-radio" name="radio" checked> <span class="label-text">Modificar</span>
+					</label>
+				</div>
+				<div class="form-check eliminar-clr">
+					<label>
+						<input type="radio" id="eliminar-radio"-- name="radio"> <span class="label-text">Eliminar</span>
+					</label>
+				</div>
+				<div class="form-check tramitar-clr">
+					<label>
+						<input type="radio" id="cambios-radio" name="radio"> <span class="label-text">Tramitar sin cambios</span>
+					</label>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section class="select-action">
+		<div class="page-card">
+			<div class="selecion-group">
+				<h4 class="heading">Informacion de la Cuenta</h4>
+			</div>
+			<div class="acc-info">
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Nombres apellidos del titular</h5>
+						<p>Gonzalez Velasquez Frando Alexis</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Tipo de Indentification</h5>
+						<p>CC</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Numero de Identification</h5>
+						<p>517220007220062602</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Nombre del Suscriptor</h5>
+						<p>BCO OCCIDENTE</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Numero de obligacion</h5>
+						<p>00080168185</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Tipo de Cartera</h5>
+						<p>CCF</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Codigo del suscriptor</h5>
+						<p>180100</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Numero de caso</h5>
+						<p>AL123456789</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	<section class="obligacion-info acc-info value-section" style="display:none;">
+		<div class="page-card padding-btm0">
+			<h3 class="heading">Informacion de la Obligacion</h3>
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-12">
+					<h5>Fecha de Apertura</h5>
+					<p>20121031</p>
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+					<h5>Fecha de Vencimiento</h5>
+					<p>20121031</p>
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+						<h5>Novedad</h5>
+						<p>Tarjeta Cancelada Voluntarame</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Estado Cuenta</h5>
+						<p>Cancelada Voluntarame</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Fecha Estado Cuenta</h5>
+						<p>200302174</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Fecha Novedad</h5>
+						<p>200302174</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Garante/Tipo Deudor</h5>
+						<p>Principal</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Periodicidad de pago</h5>
+						<p>Mensual</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12 combine-form">
+						<div class="row">
+							<div class="col-6">
+								<h5>Adjetivo</h5>
+								<p>No Hay Adjetivo</p>
+							</div>
+							<div class="col-6">
+								<h5>Fecha</h5>
+								<p>20101357</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12 combine-form">
+						<div class="row">
+							<div class="col-6">
+								<h5>Adjetivo</h5>
+								<p>No Hay Adjetivo</p>
+							</div>
+							<div class="col-6">
+								<h5>Fecha</h5>
+								<p>20101357</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12 combine-form">
+						<div class="row">
+							<div class="col-6">
+								<h5>Adjetivo</h5>
+								<p>No Hay Adjetivo</p>
+							</div>
+							<div class="col-6">
+								<h5>Fecha</h5>
+								<p>20101357</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Valor Cuota</h5>
+						<p>****</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Cupo o Valor incial</h5>
+						<p>-</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Saldo actual</h5>
+						<p>-</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Saldo en more</h5>
+						<p>-</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Dias en Mora</h5>
+						<p>000</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Estado Origen</h5>
+						<p>Normal - Creacion por apertura</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Situacion/Estado Titular</h5>
+						<p>Normal</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Clase de Tarjeta Credito</h5>
+						<p>Platinum</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Franquicia de tarjeta de credito</h5>
+						<p>Visa</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Estado Plastico</h5>
+						<p>Entregado</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Fecha Estado Plastico</h5>
+						<p>20150227</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Oficina de Radicacion</h5>
+						<p>-</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Tipo de Moneda</h5>
+						<p>Legal</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Tipo de Garantia</h5>
+						<p>Otra</p>
+					</div>
+			</div>
+		</div>
+	</section>
+	<section class="obligacion-info acc-info field-section form-element">
+		<div class="page-card">
+			<h3 class="heading">Informacion de la Obligacion</h3>
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-12">
+					<h5>Fecha de Apertura</h5>
+					<input type="text" class="form-control" value="00" />
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+					<h5>Fecha de Vencimiento</h5>
+					<input type="text" class="form-control" value="00" />
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+						<h5>Novedad</h5>
+						<select class="form-control">
+							<option>Tarjeta Cancelada Voluntarame</option>
+							<option>Tarjeta Cancelada Voluntarame</option>
+							<option>Tarjeta Cancelada Voluntarame</option>
+							<option>Tarjeta Cancelada Voluntarame</option>
+						</select>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Estado Cuenta</h5>
+						<select class="form-control">
+							<option>Cancelada Voluntarame</option>
+							<option>Cancelada Voluntarame</option>
+							<option>Cancelada Voluntarame</option>
+							<option>Cancelada Voluntarame</option>
+						</select>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Fecha Estado Cuenta</h5>
+						<input type="text" class="form-control" value="00" />
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Fecha Novedad</h5>
+						<input type="text" class="form-control" value="No Hay ADJETIVO" />
+						
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Garante/Tipo Deudor</h5>
+						<select class="form-control">
+							<option>Principal</option>
+							<option>Principal</option>
+							<option>Principal</option>
+							<option>Principal</option>
+						</select>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Periodicidad de pago</h5>
+						<input type="text" class="form-control" value="No Hay ADJETIVO" />
+					</div>
+					<div class="col-md-3 col-sm-4 col-12 combine-form">
+						<div class="row">
+							<div class="col-6">
+								<h5>Adjetivo</h5>
+								<select class="form-control">
+									<option>No Hay Adjetivo</option>
+									<option>No Hay Adjetivo</option>
+									<option>No Hay Adjetivo</option>
+									<option>No Hay Adjetivo</option>
+								</select>
+							</div>
+							<div class="col-6">
+								<h5>Fecha</h5>
+								<input type="text" class="form-control" value="AAAAMMDD" />
+							</div>
+						</div>
+					</div>
+										<div class="col-md-3 col-sm-4 col-12 combine-form">
+						<div class="row">
+							<div class="col-6">
+								<h5>Adjetivo</h5>
+								<select class="form-control">
+									<option>No Hay Adjetivo</option>
+									<option>No Hay Adjetivo</option>
+									<option>No Hay Adjetivo</option>
+									<option>No Hay Adjetivo</option>
+								</select>
+							</div>
+							<div class="col-6">
+								<h5>Fecha</h5>
+								<input type="text" class="form-control" value="AAAAMMDD" />
+							</div>
+						</div>
+					</div>
+										<div class="col-md-3 col-sm-4 col-12 combine-form">
+						<div class="row">
+							<div class="col-6">
+								<h5>Adjetivo</h5>
+								<select class="form-control">
+									<option>No Hay Adjetivo</option>
+									<option>No Hay Adjetivo</option>
+									<option>No Hay Adjetivo</option>
+									<option>No Hay Adjetivo</option>
+								</select>
+							</div>
+							<div class="col-6">
+								<h5>Fecha</h5>
+								<input type="text" class="form-control" value="AAAAMMDD" />
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Valor Cuota</h5>
+						<input type="text" class="form-control" value="20130131" />
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Cupo o Valor incial</h5>
+						<input type="text" class="form-control" value="20130131" />
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Saldo actual</h5>
+						<input type="text" class="form-control" value="20130131" />
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Saldo en more</h5>
+						<input type="text" class="form-control" value="20130131" />
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Dias en Mora</h5>
+						<input type="text" class="form-control" value="20130131" />
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Estado Origen</h5>
+						<select class="form-control">
+							<option>Normal - Creacion por apertura</option>
+							<option>Normal - Creacion por apertura</option>
+							<option>Normal - Creacion por apertura</option>
+							<option>Normal - Creacion por apertura</option>
+						</select>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Situacion/Estado Titular</h5>
+						<select class="form-control">
+							<option>Normal</option>
+							<option>Normal</option>
+							<option>Normal</option>
+							<option>Normal</option>
+						</select>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Clase de Tarjeta Credito</h5>
+						<select class="form-control">
+							<option>Platinum</option>
+							<option>Silver</option>
+							<option>Gold</option>
+							<option>Platinum</option>
+						</select>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Franquicia de tarjeta de credito</h5>
+						<select class="form-control">
+							<option>Visa</option>
+							<option>Master</option>
+						</select>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Estado Plastico</h5>
+						<select class="form-control">
+							<option>Entregado</option>
+							<option>Entregado</option>
+							<option>Entregado</option>
+							<option>Entregado</option>
+						</select>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Fecha Estado Plastico</h5>
+						<input type="text" class="form-control" value="20130101" />
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Oficina de Radicacion</h5>
+						<input type="text" class="form-control" value="20130131" />
+						
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Tipo de Moneda</h5>
+						<select class="form-control">
+							<option>Legal</option>
+							<option>Legal</option>
+							<option>Legal</option>
+							<option>Legal</option>
+						</select>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Tipo de Garantia</h5>
+						<select class="form-control">
+							<option>Otra</option>
+							<option>Otra</option>
+							<option>Otra</option>
+							<option>Otra</option>
+						</select>
+					</div>
+			</div>
+		</div>
+	</section>
+	<section class="obligacion-info acc-info">
+		<div class="page-card">
+			<h3 class="heading">Vector de Comportamiento <span class="actual-centor">Actualizar Vector</span> <span>(Ultimos 47 meses: 2014/06 hasta 2018/06)</span></h3>
+			<div class="show-obligacion form-element" style="display:block;">
+				<table class="table year-tbl">
+					<thead>
+						<tr>
+							<th>Anos</th>
+							<th>Dic</th>
+							<th>Nov</th>
+							<th>Oct</th>
+							<th>Sep</th>
+							<th>Ago</th>
+							<th>Jul</th>
+							<th>Jun</th>
+							<th>May</th>
+							<th>Abr</th>
+							<th>Mar</th>
+							<th>Feb</th>
+							<th>Ene</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>2018</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>2017</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>2016</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>2015</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>2014</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+							<td>
+								<h5>M120</h5>
+								<select class="form-control">
+									<option>M120</option>
+									<option>M120</option>
+									<option>M120</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<h4 class="show-info">Contraer <i class="fa fa-angle-up"></i></h4>
+		</div>
+	</section>
+	<section class="obligacion-info acc-info field-section form-element">
+		<div class="page-card">
+			<h3 class="heading">Forma de Pago</h3>
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-12">
+						<h5>Forma de pago</h5>
+						<select class="form-control">
+							<option>Saldada</option>
+							<option>Saldada</option>
+							<option>Saldada</option>
+							<option>Saldada</option>
+						</select>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Tipo de obligacion</h5>
+						<select class="form-control">
+							<option>Normal</option>
+							<option>Normal</option>
+							<option>Normal</option>
+							<option>Normal</option>
+						</select>
+					</div>
+			</div>
+		</div>
+	</section>
+	<div class="btn-container">
+		<a href="confirm-credit-modificacion.html" class="btn btn-primary pull-right">Continuar</a>
+		<input type="button" class="btn btn-inverse pull-right right10" value="Mi Lista" />
+		<a href="confirm-credit-modificacion.html" class="btn btn-inverse pull-right right10">Nueva Consulta</a>
+	</div>
+	</article>
+	<footer>
+		<p>&copy; 2018 Experian Information Solutions, Inc. Experian Marketing Services All rights reserve</p>
+	</footer>
+	<div class="modal fade experian-modal text-center" id="eliminar">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<div class="modal-body">
+					<h3>Eliminar</h3>
+					<p>No se efectuaran cambios en esta pagina.</p>
+					<div class="modal-btn">
+						<input type="button" class="btn btn-secondary" value="Cancelar" />
+						<input type="button" class="btn btn-primary" value="Aceptar" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade experian-modal text-center" id="tramitar">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<div class="modal-body">
+					<h3>Tramitar sin Cambios</h3>
+					<p>No se efectuaran cambios en esta pagina.</p>
+					<div class="modal-btn">
+						<input type="button" class="btn btn-secondary" value="Cancelar" />
+						<input type="button" class="btn btn-primary" value="Aceptar" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="overlay"></div>
+	<script type="text/javascript">
+		$('#modificar-radio').change(function(){
+			$('.value-section').hide();
+			$('.field-section').show();
+		});
+		$('#eliminar-radio').change(function(){
+			$('.value-section').show();
+				$('.field-section').hide();
+				$('#eliminar').modal('show');
+		});
+		$('#cambios-radio').change(function(){
+			$('.value-section').show();
+				$('.field-section').hide();
+				$('#tramitar').modal('show');
+		});
+		$('.hamburger').click(function(){
+			$(".sidemenu").toggleClass('active','');
+			$(".overlay").toggle();
+		});
+		$(".overlay").click(function(){
+			$(".sidemenu").removeClass('active');
+			$(this).hide();
+		});
+		$('.show-info').click(function(){
+			$('.show-obligacion').slideToggle();
+			$(this).html($(this).html() == 'Contraer <i class="fa fa-angle-up"></i>' ? 'Expandir <i class="fa fa-angle-down"></i>' : 'Contraer <i class="fa fa-angle-up"></i>');
+		});
+	</script>
+</body>
+</html>

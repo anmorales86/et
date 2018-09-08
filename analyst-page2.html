@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="notification-bar">
+		<img src="images/notice.png" class="notice-icon" />
+		<p>Noticias: En cumplimiento a lo dispuesto en resolucion numero 76354 del 04 de diciembre de 2012 de 1a Superintendencia de Industria cornercio, En cumplimiento a lo dispuesto en resolucion numero 76354 del 04 de diciembre de 2012 de 1a Superintendencia de Industria cornercio</p>
+		<a href="#">Ver mas</a>
+		<div class="hide-notice">
+			<h4>Cerrar</h4>
+			<img src="images/notice_close_icon.png" />
+		</div>
+	</section>
+	<div class="sidemenu" style="top:51px;">
+		<ul>
+			<li class="hamburger"><img src="images/hamburger.png" /><label>Menu</label></li>
+			<li class="selected"><span>Pipeline</span><img src="images/menu_pipeline_sl.png" /></li>
+			<li><span>Reclamo</span><img src="images/menu_dispute.png" /></li>
+			<li><span>Modificacion</span><img src="images/menu_modify.png" /></li>
+			<li><span>Audit</span><img src="images/menu_audit.png" /></li>
+			<li><span>Reports</span><img src="images/menu_report.png" /></li>
+			<li><span>Administration</span><img src="images/menu_admin.png"></li>
+			
+		</ul>
+	</div>
+	<article class="main-content">
+	<header>
+		<div class="row">
+		<div class="col-sm-5">
+			<img class="logo" src="images/logo.png" />
+		</div>
+		<div class="col-sm-7">
+			<ul>
+				<li><img src="images/search.png" /></li>
+				<li><img src="images/notification.png"><span class="notification">6</span></li>
+				<li class="user-profile">
+					<div class="user-info"><img src="images/userprofile.png" /><h3>Juliana Perez <span class="font-400">(Analista)</span> <br /><span>Citi Colombia</span></h3><img src="images/user-dropdown.png" class="user-option"></div>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</header>
+	<section class="breadcrumb-container">
+		<div class="row align-items-start">
+		<div class="col-sm-6">
+			<h2>Bandera de Entrada <span><a href="#"><img src="images/refresh.png" />Refrescar Pagina</a></span></h2>
+			<h4>Inicio > Bandera de entrada</h4>
+		</div>
+		<div class="col-sm-6">
+			<a href="formulario.html" class="btn btn-secondary">Radicar Modification</a>
+			<input type="button" value="Formular Reclamo" class="btn btn-primary" />
+		</div>
+		</div>
+	</section>
+	<section class="tile-container">
+	<div class="row">
+		<div class="col-sm-6 col-xs-12 reclamo tile-part">
+			
+			<div class="tile">
+			<div class="row">
+				<div class="col-4">
+					<div class="tile-highlight reclamo-tile">
+						<div class="tile-category">
+							<h3>Reclamo</h3>
+							<img src="images/reclamo-tile.png">
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<h5>Total</h5>
+					<h2>100</h2>
+				</div>
+				<div class="col-4">
+					<h5>Devoluciones</h5>
+					<h2>100</h2>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-xs-12 modificacion tile-part">
+			
+			<div class="tile">
+			<div class="row">
+				<div class="col-4">
+					<div class="tile-highlight modificacion-tile">
+						<div class="tile-category">
+							<h3>Modificacion</h3>
+							<img src="images/modificacion.png">
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<h5>Total</h5>
+					<h2>100</h2>
+				</div>
+				<div class="col-4">
+					<h5>Devoluciones</h5>
+					<h2>80</h2>
+				</div>
+			</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<section class="filter-container">
+		<div class="filter-section">
+			<div class="filter-txt">
+				<h3 class="heading">Consultar Por</h3>
+			</div>
+			<div class="filter-input">
+				<select class="form-control">
+					<option>Modificacion</option>
+					<option>Reclamo</option>
+				</select>
+			</div>
+			<div class="filter-input">
+				<select class="form-control">
+					<option>Tipo de documento</option>
+					<option>BanColombia</option>
+				</select>
+			</div>
+			<div class="filter-input">
+				<input type="text" class="form-control" placeholder="Ingrese el numero de documento" />
+			</div>
+			<div class="filter-btn">
+				<input type="button" value="Consultar" class="btn btn-primary" />
+			</div>
+		</div>
+	</section>
+	<section class="tbl-container">
+		<div class="tbl-info">
+			<div class="table-filter">
+				<div class="row">
+				<div class="col-md-4">
+					<ul>
+						<li><h4 class="heading">Tramites Pendientes</h4></li>
+						<li>
+							<label>Mostrando</label>
+							<select>
+								<option>50</option>
+								<option>100</option>
+								<option>150</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-8">
+					<ul class="right-section">
+						<li>
+							<label>Exportar</label>
+							<input type="button" class="pdf-btn" value="PDF">
+							<input type="button" class="xls-btn" value="XLS">
+						</li>
+						<li>
+							<select class="action">
+								<option>Accion</option>
+								<option>Reclamo</option>
+								<option>Modificacion</option>
+							</select>
+						</li>
+						<li>
+							<label>Ir a la pagina</label>
+							<select>
+								<option>50</option>
+								<option>100</option>
+								<option>150</option>
+							</select>
+						</li>
+						<li class="pagination">
+							<label>Pagina</label>
+							<ul>
+								<li><img src="images/left-arrow.png"></li>
+								<li class="active">1</li>
+								<li>2</li>
+								<li>3</li>
+								<li>...</li>
+								<li>50</li>
+								<li><img src="images/right-arrow.png"></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+			<div class="tbl-structure">
+			<table class="table">
+			<thead>
+				<tr>
+					<th>
+						<div class="checkbox">
+							<input id="checkbox1" type="checkbox">
+							<label for="checkbox1"></label>
+						</div>
+					</th>
+					<th><label>Tipo ID</label></th>
+					<th><label>Numero ID</label></th>
+					<th><label>Nombers Apellidos Titular</label></th>
+					<th><label>Oblogation</label></th>
+					<th><label>Nombre Suscriptor</label></th>
+					<th><label>Proceso</label></th>
+					<th><label>#Caso</label></th>
+					<th><label>Fecha Inicio Proceso</label></th>
+					<th></th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>
+						<div class="checkbox">
+							<input id="checkbox2" type="checkbox">
+							<label for="checkbox2"></label>
+						</div>
+					</td>
+					<td><a href="#">CC</a></td>
+					<td><a href="modificacion.html">80168185</a></td>
+					<td>Rodriguez</td>
+					<td>80168185</td>
+					<td>Bancolombia</td>
+					<td><div class="process-status"><img src="images/grid_dispute_icon.png">Reclamo</div></td>
+					<td>AL45667843</td>
+					<td><div class="date-time"><img src="images/grid_status1.png" />01/08/2018</div></td>
+					<td><img src="images/grid_expasnd.png" class="grid-toggle" /></td>
+				</tr>
+				<tr class="inner-tbl">
+					<td>
+					</td>	
+					<td colspan="9">
+						<table class="table">
+							<tr>
+								<td>
+									<h5>Tipo Cartera</h5>
+									<p>TDC</p>
+								</td>
+								<td>
+									<h5>Fecha Devolucuion</h5>
+									<p>02/22/2018</p>
+								</td>
+								<td>
+									<h5>Nombers Revisor</h5>
+									<p>John Smith</p>
+								</td>
+								<td>
+									<h5>Motivo Devolucuion</h5>
+									<p>Errores del sisteam</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="checkbox">
+							<input id="checkbox3" type="checkbox">
+							<label for="checkbox3"></label>
+						</div>
+					</td>
+					<td><a href="#">CC</a></td>
+					<td><a href="modificacion.html">80168185</a></td>
+					<td>Gomez</td>
+					<td>80168185</td>
+					<td>Bancolombia</td>
+					<td><div class="process-status"><img src="images/grid_dispute_icon.png">Reclamo</div></td>
+					<td>AL45667843</td>
+					<td><div class="date-time"><img src="images/grid_status2.png" />01/08/2018</div></td>
+					<td><img src="images/grid_expasnd.png" class="grid-toggle" /></td>
+				</tr>
+				<tr class="inner-tbl">
+					<td>
+					</td>	
+					<td colspan="9">
+						<table class="table">
+							<tr>
+								<td>
+									<h5>Tipo Cartera</h5>
+									<p>TDC</p>
+								</td>
+								<td>
+									<h5>Fecha Devolucuion</h5>
+									<p>02/22/2018</p>
+								</td>
+								<td>
+									<h5>Nombers Revisor</h5>
+									<p>John Smith</p>
+								</td>
+								<td>
+									<h5>Motivo Devolucuion</h5>
+									<p>Errores del sisteam</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="checkbox">
+							<input id="checkbox4" type="checkbox">
+							<label for="checkbox4"></label>
+						</div>
+					</td>
+					<td><a href="#">CC</a></td>
+					<td><a href="modificacion.html">80168185</a></td>
+					<td>Gonzalez</td>
+					<td>80168185</td>
+					<td>Bancolombia</td>
+					<td><div class="process-status"><img src="images/grid_modify_icon.png">Modificacion</div></td>
+					<td>AL45667843</td>
+					<td><div class="date-time"><img src="images/grid_status3.png" />01/08/2018</div></td>
+					<td><img src="images/grid_expasnd.png" class="grid-toggle" /></td>
+				</tr>
+				<tr class="inner-tbl">
+					<td>
+					</td>	
+					<td colspan="9">
+						<table class="table">
+							<tr>
+								<td>
+									<h5>Tipo Cartera</h5>
+									<p>TDC</p>
+								</td>
+								<td>
+									<h5>Fecha Devolucuion</h5>
+									<p>02/22/2018</p>
+								</td>
+								<td>
+									<h5>Nombers Revisor</h5>
+									<p>John Smith</p>
+								</td>
+								<td>
+									<h5>Motivo Devolucuion</h5>
+									<p>Errores del sisteam</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="checkbox">
+							<input id="checkbox5" type="checkbox">
+							<label for="checkbox5"></label>
+						</div>
+					</td>
+					<td><a href="#">CC</a></td>
+					<td><a href="modificacion.html">80168185</a></td>
+					<td>Martinez</td>
+					<td>80168185</td>
+					<td>Bancolombia</td>
+					<td><div class="process-status"><img src="images/grid_modify_icon.png">Modificacion</div></td>
+					<td>AL45667843</td>
+					<td><div class="date-time"><img src="images/grid_status1.png" />01/08/2018</div></td>
+					<td><img src="images/grid_expasnd.png" class="grid-toggle" /></td>
+				</tr>
+				<tr class="inner-tbl">
+					<td>
+					</td>	
+					<td colspan="9">
+						<table class="table">
+							<tr>
+								<td>
+									<h5>Tipo Cartera</h5>
+									<p>TDC</p>
+								</td>
+								<td>
+									<h5>Fecha Devolucuion</h5>
+									<p>02/22/2018</p>
+								</td>
+								<td>
+									<h5>Nombers Revisor</h5>
+									<p>John Smith</p>
+								</td>
+								<td>
+									<h5>Motivo Devolucuion</h5>
+									<p>Errores del sisteam</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="checkbox">
+							<input id="checkbox6" type="checkbox">
+							<label for="checkbox6"></label>
+						</div>
+					</td>
+					<td><a href="#">CC</a></td>
+					<td><a href="modificacion.html">80168185</a></td>
+					<td>Garcia</td>
+					<td>80168185</td>
+					<td>Bancolombia</td>
+					<td><div class="process-status"><img src="images/grid_dispute_icon.png">Reclamo</div></td>
+					<td>AL45667843</td>
+					<td><div class="date-time"><img src="images/grid_status2.png" />01/08/2018</div></td>
+					<td><img src="images/grid_expasnd.png" class="grid-toggle" /></td>
+				</tr>
+				<tr class="inner-tbl">
+					<td>
+					</td>	
+					<td colspan="9">
+						<table class="table">
+							<tr>
+								<td>
+									<h5>Tipo Cartera</h5>
+									<p>TDC</p>
+								</td>
+								<td>
+									<h5>Fecha Devolucuion</h5>
+									<p>02/22/2018</p>
+								</td>
+								<td>
+									<h5>Nombers Revisor</h5>
+									<p>John Smith</p>
+								</td>
+								<td>
+									<h5>Motivo Devolucuion</h5>
+									<p>Errores del sisteam</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="checkbox">
+							<input id="checkbox7" type="checkbox">
+							<label for="checkbox7"></label>
+						</div>
+					</td>
+					<td><a href="#">CC</a></td>
+					<td><a href="modificacion.html">80168185</a></td>
+					<td>Lopez</td>
+					<td>80168185</td>
+					<td>Bancolombia</td>
+					<td><div class="process-status"><img src="images/grid_dispute_icon.png">Reclamo</div></td>
+					<td>AL45667843</td>
+					<td><div class="date-time"><img src="images/grid_status1.png" />01/08/2018</div></td>
+					<td><img src="images/grid_expasnd.png" class="grid-toggle" /></td>
+				</tr>
+				<tr class="inner-tbl">
+					<td>
+					</td>	
+					<td colspan="9">
+						<table class="table">
+							<tr>
+								<td>
+									<h5>Tipo Cartera</h5>
+									<p>TDC</p>
+								</td>
+								<td>
+									<h5>Fecha Devolucuion</h5>
+									<p>02/22/2018</p>
+								</td>
+								<td>
+									<h5>Nombers Revisor</h5>
+									<p>John Smith</p>
+								</td>
+								<td>
+									<h5>Motivo Devolucuion</h5>
+									<p>Errores del sisteam</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="checkbox">
+							<input id="checkbox8" type="checkbox">
+							<label for="checkbox8"></label>
+						</div>
+					</td>
+					<td><a href="#">CC</a></td>
+					<td><a href="modificacion.html">80168185</a></td>
+					<td>Hernandez</td>
+					<td>80168185</td>
+					<td>Bancolombia</td>
+					<td><div class="process-status"><img src="images/grid_modify_icon.png">Modificacion</div></td>
+					<td>AL45667843</td>
+					<td><div class="date-time"><img src="images/grid_status2.png" />01/08/2018</div></td>
+					<td><img src="images/grid_expasnd.png" class="grid-toggle" /></td>
+				</tr>
+				<tr class="inner-tbl">
+					<td>
+					</td>	
+					<td colspan="9">
+						<table class="table">
+							<tr>
+								<td>
+									<h5>Tipo Cartera</h5>
+									<p>TDC</p>
+								</td>
+								<td>
+									<h5>Fecha Devolucuion</h5>
+									<p>02/22/2018</p>
+								</td>
+								<td>
+									<h5>Nombers Revisor</h5>
+									<p>John Smith</p>
+								</td>
+								<td>
+									<h5>Motivo Devolucuion</h5>
+									<p>Errores del sisteam</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="checkbox">
+							<input id="checkbox9" type="checkbox">
+							<label for="checkbox9"></label>
+						</div>
+					</td>
+					<td><a href="#">CC</a></td>
+					<td><a href="modificacion.html">80168185</a></td>
+					<td>Sanchez</td>
+					<td>80168185</td>
+					<td>Bancolombia</td>
+					<td><div class="process-status"><img src="images/grid_dispute_icon.png">Reclamo</div></td>
+					<td>AL45667843</td>
+					<td><div class="date-time"><img src="images/grid_status3.png" />01/08/2018</div></td>
+					<td><img src="images/grid_expasnd.png" class="grid-toggle" /></td>
+				</tr>
+				</tbody>
+			</table>
+			</div>
+			<div class="table-filter bottom-filter">
+				<div class="row justify-content-end">
+				<div class="col-md-8">
+					<ul class="right-section">
+						<li>
+							<label>Ir a la pagina</label>
+							<select>
+								<option>50</option>
+								<option>100</option>
+								<option>150</option>
+							</select>
+						</li>
+						<li class="pagination">
+							<label>Pagina</label>
+							<ul>
+								<li><img src="images/left-arrow.png"></li>
+								<li class="active">1</li>
+								<li>2</li>
+								<li>3</li>
+								<li>...</li>
+								<li>50</li>
+								<li><img src="images/right-arrow.png"></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	</article>
+	<footer>
+		<p>&copy; 2018 Experian Information Solutions, Inc. Experian Marketing Services All rights reserve</p>
+	</footer>
+	<div class="overlay"></div>
+	<script>
+		$(".grid-toggle").click(function() {
+			$(this).toggleClass("rotate","");
+			$(".grid-toggle").not(this).closest('tr').next(".inner-tbl").hide();
+			$(this).closest('tr').next(".inner-tbl").toggle();
+			$(".grid-toggle").not(this).removeClass("rotate");
+		});
+		$('.hamburger').click(function(){
+			$(".sidemenu").toggleClass('active','');
+			$(".overlay").toggle();
+		});
+		$(".overlay").click(function(){
+			$(".sidemenu").removeClass('active');
+			$(this).hide();
+		});
+		$(window).scroll(function (event) {
+			var scroll = $(window).scrollTop();
+			if(scroll > 50)
+			{
+				$('.sidemenu').css('top', 0);
+			}
+			else if($(".notification-bar").is(':hidden'))
+			{
+				$('.sidemenu').css('top', 0);
+			}
+			else{
+			$('.sidemenu').css('top', 51);}
+		});
+		$('.hide-notice').click(function(){
+			$('.notification-bar').slideUp(500);
+			$('.sidemenu').css('top', 0);
+		})
+	</script>
+</body>
+</html>

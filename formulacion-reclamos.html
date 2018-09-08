@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="sidemenu">
+		<ul>
+			<li class="hamburger"><img src="images/hamburger.png" /><label>Menu</label></li>
+			<li><a href="analyst.html"><span>Listas</span><img src="images/menu_pipeline.png" /></a></li>
+			<li class="selected"><a href="reclamo.html"><span>Reclamos</span><img src="images/menu_dispute_sl.png" /></a></li>
+			<li><a href="formulario.html"><span>Modificaciones</span><img src="images/menu_modify.png" /></a></li>
+			<li><span>Auditoria</span><img src="images/menu_audit.png" /></li>
+			<li><a href="reportes.html"><span>Reportes</span><img src="images/menu_report.png" /></a></li>
+			<li><span>Administracion</span><img src="images/menu_admin.png"></li>
+			
+		</ul>
+	</div>
+	<article class="main-content">
+	<header>
+		<div class="row">
+		<div class="col-sm-5">
+			<img class="logo" src="images/logo.png" />
+		</div>
+		<div class="col-sm-7">
+			<ul>
+				<li><img src="images/search.png" /></li>
+				<li><img src="images/notification.png"><span class="notification">6</span></li>
+				<li class="user-profile">
+					<div class="user-info"><img src="images/userprofile.png" /><h3>Juliana Perez <span class="font-400">(Analista)</span> <br /><span>Citi Colombia</span></h3><img src="images/user-dropdown.png" class="user-option"></div>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</header>
+	<section class="breadcrumb-container">
+		<div class="row align-items-start">
+		<div class="col-sm-6">
+			<h2>Reclamo</h2>
+			<h4>Inicio > Mi Lista > Formulacion reclamos Entidad</h4>
+		</div>
+		</div>
+	</section>
+	<section class="tab-container">
+		<ul>
+			<li class="lista-comun active">Formulacion Reclamos Entidad</li>
+			<li class="mi-lista">Formulacion Reclamos Masivos</li>
+			<li class="mi-lista">Cierre Reclamos Masivos</li>
+		</ul>
+	</section>
+	<section class="obligacion-info acc-info">
+		<div class="page-card">
+			<h3 class="heading">Formulario de consulta de obligaciones por titular <span>(El campo marcado con "<i>*</i>" es obligatorio)</span></h3>
+			<div class="show-obligacion form-element">
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-12">
+					<h5>Tipo Identification <span>*</span></h5>
+					<select class="form-control">
+						<option>Seleccionar</option>
+						<option>Seleccionar</option>
+						<option>Seleccionar</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+					<h5>Numero de Identificacion <span>*</span></h5>
+					<input type="text" class="form-control" value="" />
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+					<h5>Tipo de cartera</h5>
+					<input type="text" class="form-control" value="" />
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+					<h5>Numero de obligacion</h5>
+					<input type="text" class="form-control" value="" />
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+					<h5>Numero de Caso</h5>
+					<input type="text" class="form-control" value="" />
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+					<h5>Justificacion <span>*</span></h5>
+					<select class="form-control">
+						<option>Seleccionar</option>
+						<option>Seleccionar</option>
+						<option>Seleccionar</option>
+					</select>
+				</div>
+			</div>
+			</div>
+			<h4 class="show-info">Expandir <i class="fa fa-angle-down"></i></h4>
+		</div>
+	</section>
+	<section class="obligacion-info acc-info">
+		<div class="page-card">
+			<h3 class="heading">Detalle de la obligacion seleccionada</h3>
+			<div class="obligacion-detail acc-info" style="display:block">
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Tipo de Indentification</h5>
+						<p>CC</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Nro. de Identification</h5>
+						<p>00080165655</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Nombre y apellidos</h5>
+						<p>Segura Jimenez German Andres</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Numero de obligacion</h5>
+						<p>459368958754602</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Novedad</h5>
+						<p>Segura Jimenez German Andres</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Suscriptor</h5>
+						<p>Citibank Columbia</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Fecha Apertura</h5>
+						<p>2012/10/31</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Vector</h5>
+						<p>NNNNNNN--N----</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Valores en miles de pesos</h5>
+						<p>-</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Cupo o valor Inicial</h5>
+						<p>$0</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Saldo en Mora</h5>
+						<p>$0</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Cuotas Canceladas</h5>
+						<p>NRP</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Periodicidad de pago</h5>
+						<p>Mensual</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Tipo Cuenta</h5>
+						<p>TDC</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Fecha Estado Cuenta</h5>
+						<p>02/20/2018</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Fecha Novedad</h5>
+						<p>BCO OCCIDENTE</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Fecha Vencimiento</h5>
+						<p>02/20/2018</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Saldo Actual</h5>
+						<p>$0</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Valor Cuota</h5>
+						<p>$0</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Total Cuotas</h5>
+						<p>NRP</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Forma Pago</h5>
+						<p>Voluntario</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h4 class="show-detail">Contraer <i class="fa fa-angle-up"></i></h4>
+	</section>
+	<section class="obligacion-info form-element">
+		<div class="page-card">
+			<div class="row clear-padding">
+				<div class="col-sm-5 col-12 secondary-form">
+						<h5>Tipo de Reclamo<span>*</span></h5>
+						<div class="col-sm-9">
+							<select class="form-control" id="tipo-reclamo">
+							<option selected disabled>Seleccionar</option>
+							<option>02 Actualizar Informacion</option>
+							<option>02 Actualizar Informacion</option>
+							<option>02 Actualizar Informacion</option>
+							<option>02 Actualizar Informacion</option>
+							</select>
+						</div>
+				</div>
+			</div>
+			<div class="row tipo-select" style="display:none;">
+				<div class="col-sm-5">
+					<div class="list-radio radio-container">
+						<div class="form-check">
+							<label>
+								<input type="radio" name="radio"> <span class="label-text">No actualizacion de la informacion</span>
+							</label>
+						</div>
+						<div class="form-check">
+							<label>
+								<input type="radio" name="radio"> <span class="label-text">No reporte informacion oportuno</span>
+							</label>
+						</div>
+						<div class="form-check">
+							<label>
+								<input type="radio" name="radio"> <span class="label-text">Reporte de informacion incompleta o parcial</span>
+							</label>
+						</div>
+						<div class="form-check">
+							<label>
+								<input type="radio" name="radio"> <span class="label-text">No inclusion de las respectivas leyendas</span>
+							</label>
+						</div>
+						<div class="form-check">
+							<label>
+								<input type="radio" name="radio"> <span class="label-text">Inconformidad con las permanencia de la informacion negativa</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-7">
+					<h6>Inconformidad con las permanencia de la informacion negativa</h6>
+					<div class="content-block">
+						<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="obligacion-info acc-info field-section form-element">
+		<div class="page-card">
+			<div class="row">
+				<div class="col-sm-6 col-12 secondary-form">
+					<h5>Tipo de Leyenda<span>*</span></h5>
+					<div class="col-sm-7">
+					<select class="form-control">
+						<option>Reclamo en Tramite</option>
+						<option>Reclamo en Tramite</option>
+						<option>Reclamo en Tramite</option>
+						<option>Reclamo en Tramite</option>
+					</select>
+					</div>
+				</div>
+				<div class="col-sm-6 col-12 secondary-form">
+					<h5>Numero de Reclamo Entidad</h5>
+					<div class="col-sm-7">
+					<input type="text" class="form-control" value="" />
+					</div>
+				</div>
+				<div class="col-12">
+					<h5>Al momento de conocer co information se manifiesta que:<span>*</span></h5>
+					<textarea class="form-control"></textarea>
+				</div>
+			</div>
+			<div class="checkbox-container">
+				<div class="checkbox">
+					<input id="checkbox" type="checkbox">
+					<label for="checkbox">He leido y entrendido los terminos del proceso</label>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="obligacion-info acc-info">
+		<div class="page-card">
+			<h3 class="heading">Por favor ingrese la siguiente informacion del Ciudadano para formular el reclamo</h3>
+			<div class="acc-info">
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Correo Electronico</h5>
+						<p>newbank@experian.com</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Confirmar Correo Electronico</h5>
+						<p>newbank@experian.com</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Telefono Fijo</h5>
+						<p>2224389</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Extension</h5>
+						<p>2504</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Telefone Celular</h5>
+						<p>310522504</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Direccion Fisica</h5>
+						<p>cr 7 45 19</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Pais</h5>
+						<p>Colombia</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Departamento</h5>
+						<p>Huila</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Ciudad</h5>
+						<p>Neiva</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="obligacion-info terms-condition">
+		<div class="page-card">
+			<h3 class="heading">Terminos y Condiciones</h3>
+			<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset.</p>
+			<div class="checkbox-container">
+				<div class="checkbox">
+					<input id="checkbox1" type="checkbox">
+					<label for="checkbox1">Acepto los Terminos y condiciones<span>*</span></label>
+				</div>
+				<div class="checkbox">
+					<input id="checkbox2" type="checkbox">
+					<label for="checkbox2">Acepto recibir respuestas de este reclamo a traves de mi Correo electronico<span>*</span></label>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="btn-container">
+		<a href="reclamo-result.html" class="btn btn-primary pull-right">Continuar</a>
+		<input type="button" class="btn btn-inverse pull-right right10" value="Volver" />
+	</div>
+	</article>
+	<footer>
+		<p>&copy; 2018 Experian Information Solutions, Inc. Experian Marketing Services All rights reserve</p>
+	</footer>
+	<div class="overlay"></div>
+	<script type="text/javascript">
+		$('.show-info').click(function(){
+			$('.show-obligacion').slideToggle();
+			$(this).html($(this).html() == 'Contraer <i class="fa fa-angle-up"></i>' ? 'Expandir <i class="fa fa-angle-down"></i>' : 'Contraer <i class="fa fa-angle-up"></i>');
+		});
+		$('.show-detail').click(function(){
+			$('.obligacion-detail').slideToggle();
+			$(this).html($(this).html() == 'Contraer <i class="fa fa-angle-up"></i>' ? 'Expandir <i class="fa fa-angle-down"></i>' : 'Contraer <i class="fa fa-angle-up"></i>');
+		});
+		$('.hamburger').click(function(){
+			$(".sidemenu").toggleClass('active','');
+			$(".overlay").toggle();
+		});
+		$(".overlay").click(function(){
+			$(".sidemenu").removeClass('active');
+			$(this).hide();
+		});
+		$('.todas input[type=button]').click(function(){
+			$('.todas ul').toggle();
+		});
+		$('.todas li').click(function(){
+			$('.todas ul').hide();
+		});
+		$('#tipo-reclamo').change(function(){
+			$('.tipo-select').show();
+		});
+		$(".tab-container li").click(function(){
+			$(".tab-container li").removeClass('active');
+			$(this).addClass('active');
+			$('.action').hide();
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="sidemenu">
+		<ul>
+			<li class="hamburger"><img src="images/hamburger.png" /><label>Menu</label></li>
+			<li><a href="analyst.html"><span>Listas</span><img src="images/menu_pipeline.png" /></a></li>
+			<li><a href="reclamo.html"><span>Reclamos</span><img src="images/menu_dispute.png" /></a></li>
+			<li><a href="formulario.html"><span>Modificaciones</span><img src="images/menu_modify.png" /></a></li>
+			<li><span>Auditoria</span><img src="images/menu_audit.png" /></li>
+			<li class="selected"><a href="reportes.html"><span>Reportes</span><img src="images/menu_report_sl.png" /></a></li>
+			<li><span>Administracion</span><img src="images/menu_admin.png"></li>
+			
+		</ul>
+	</div>
+	<article class="main-content">
+	<header>
+		<div class="row">
+		<div class="col-sm-5">
+			<img class="logo" src="images/logo.png" />
+		</div>
+		<div class="col-sm-7">
+			<ul>
+				<li><img src="images/search.png" /></li>
+				<li><img src="images/notification.png"><span class="notification">6</span></li>
+				<li class="user-profile">
+					<div class="user-info"><img src="images/userprofile.png" /><h3>Juliana Perez <span class="font-400">(Analista)</span> <br /><span>Citi Colombia</span></h3><img src="images/user-dropdown.png" class="user-option"></div>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</header>
+	<section class="breadcrumb-container">
+		<div class="row align-items-start">
+		<div class="col-sm-6">
+			<h2>Reportes</h2>
+			<h4>Inicio > Reportes > Reclamo</h4>
+		</div>
+		</div>
+	</section>
+	<section class="tab-container">
+		<ul>
+			<li class="active">Reclamo</li>
+			<li>Modificacion</li>
+			<li>Operations (Citizen)</li>
+			<li>Administration</li>
+		</ul>
+	</section>
+	<section class="obligacion-info acc-info">
+		<div class="page-card">
+		<div class="row clear-padding">
+			<div class="col-sm-6 col-12 secondary-form padding-btm0">
+					<h5>Seleccionar Tipo de Informe</h5>
+					<div class="col-sm-7">
+					<select class="form-control select-informe">
+						<option selected disabled>Seleccionar</option>
+						<option>Reclamos</option>
+						<option>Modificacion</option>
+						<option>Operations</option>
+						<option>Administration</option>
+					</select>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="obligacion-info acc-info field-section form-element" style="display:none;">
+		<div class="page-card">
+			<h3 class="heading">Criterios de informe de busqueda <span>(El campo marcado con "<i>*</i>" es obligatorio)</span></h3>
+			<div class="show-obligacion form-element" style="display:block;">
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-12">
+					<h5>Tipo de Ingreso</h5>
+					<select class="form-control">
+						<option selected disabled>Seleccionar</option>
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+					<h5>Tipo de Estado <span>*</span></h5>
+					<select class="form-control">
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+					<h5>Dias</h5>
+					<select class="form-control">
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+					<h5>Tipo de Solucion</h5>
+					<select class="form-control">
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+					<h5>Sector</h5>
+					<select class="form-control">
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+					<h5>Tipo de Cuenta</h5>
+					<select class="form-control">
+						<option selected disabled>Seleccionar</option>
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+					<h5>Numero de Cuenta</h5>
+					<input type="text" class="form-control" value="" />
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+						<h5>Tipo de Identificacion</h5>
+						<select class="form-control">
+							<option>Option 1</option>
+							<option>Option 2</option>
+							<option>Option 3</option>
+						</select>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Numero de Identificacion</h5>
+						<input type="text" class="form-control" value="" />
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Numero de Reclamo</h5>
+						<input type="text" class="form-control" value="" />
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Tipo de Reclamo</h5>
+						<select class="form-control">
+							<option selected disabled>Seleccionar</option>
+							<option>Option 1</option>
+							<option>Option 2</option>
+							<option>Option 3</option>
+						</select>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Subtipo de Reclamo</h5>
+						<select class="form-control">
+							<option selected disabled>Seleccionar</option>
+							<option>Option 1</option>
+							<option>Option 2</option>
+							<option>Option 3</option>
+						</select>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Codigo de Analista</h5>
+						<input type="text" class="form-control" value="" />
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Codigo de Revisor</h5>
+						<input type="text" class="form-control" value="" />
+						
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Codigo Analista Atencion</h5>
+						<input type="text" class="form-control" value="" />
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Codigo Analista Validacion</h5>
+						<input type="text" class="form-control"/>
+						
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Validacion de Identificacion</h5>
+						<select class="form-control">
+							<option selected disabled>Seleccionar</option>
+							<option>Option 1</option>
+							<option>Option 2</option>
+							<option>Option 3</option>
+						</select>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Nit</h5>
+						<input type="text" class="form-control"/>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Fetcha Inicial Atencion (AAAAMMDD)</h5>
+						<input type="text" class="form-control"/>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Fetcha Final Atencion (AAAAMMDD)</h5>
+						<input type="text" class="form-control"/>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Fetcha Inicial Modifica (AAAAMMDD)</h5>
+						<input type="text" class="form-control"/>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Fetcha Final Modifica (AAAAMMDD)</h5>
+						<input type="text" class="form-control"/>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Fetcha Inicial Revisa (AAAAMMDD)</h5>
+						<input type="text" class="form-control"/>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Fetcha Final Revisa (AAAAMMDD)</h5>
+						<input type="text" class="form-control"/>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Tipo de Respuesta</h5>
+						<select class="form-control">
+							<option selected disabled>Seleccionar</option>
+							<option>Option 1</option>
+							<option>Option 2</option>
+							<option>Option 3</option>
+						</select>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Fetcha Inicial Intento (AAAAMMDD)</h5>
+						<input type="text" class="form-control"/>
+					</div>
+					<div class="col-md-3 col-sm-4 col-12">
+						<h5>Fetcha Final Intento (AAAAMMDD)</h5>
+						<input type="text" class="form-control"/>
+					</div>
+				</div>
+				<div class="btn-container">
+					<a href="javascript:void(0)" class="btn btn-primary pull-right report-form">Enviar</a>
+				</div>
+			</div>
+			<h4 class="show-info">Contraer <i class="fa fa-angle-up"></i></h4>
+			</div>
+		</section>
+		<section class="show-result" style="display:none;">
+			<div class="page-card">
+				<div class="result-content">
+					<h2>El resultado viene aquí</h2>
+				</div>
+			</div>
+		</section>
+	</article>
+	<footer>
+		<p>&copy; 2018 Experian Information Solutions, Inc. Experian Marketing Services All rights reserve</p>
+	</footer>
+	<div class="overlay"></div>
+	<script type="text/javascript">
+		$('.show-info').click(function(){
+			$('.show-obligacion').slideToggle();
+			$(this).html($(this).html() == 'Contraer <i class="fa fa-angle-up"></i>' ? 'Expandir <i class="fa fa-angle-down"></i>' : 'Contraer <i class="fa fa-angle-up"></i>');
+		});
+		$('.hamburger').click(function(){
+			$(".sidemenu").toggleClass('active','');
+			$(".overlay").toggle();
+		});
+		$(".overlay").click(function(){
+			$(".sidemenu").removeClass('active');
+			$(this).hide();
+		});
+		$('.todas input[type=button]').click(function(){
+			$('.todas ul').toggle();
+		});
+		$('.todas li').click(function(){
+			$('.todas ul').hide();
+		});
+		$(".tab-container li").click(function(){
+			$(".tab-container li").removeClass('active');
+			$(this).addClass('active');
+			$('.action').hide();
+		});
+		$('.select-informe').change(function(){
+			$('.field-section').show();
+		})
+		$(".report-form").click(function(){
+			$('.show-obligacion').slideToggle();
+			$('.show-info').html($(this).html() == 'Contraer <i class="fa fa-angle-up"></i>' ? 'Expandir <i class="fa fa-angle-down"></i>' : 'Contraer <i class="fa fa-angle-up"></i>');
+			$('.show-result').show();
+		});
+	</script>
+</body>
+</html>
